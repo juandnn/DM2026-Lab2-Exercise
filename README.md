@@ -158,3 +158,6 @@ The three notebooks contain your exercise answers, code, visible results, and co
 Before submitting, check that the regular notebooks contain your answers and that both log files exist and have nonzero size. `.gitignore` covers `session_logs/`, `config/.env`, `.venv/`, the Python and Jupyter caches, and the two generated directories `lab2_workspace/` and `data/embeddings/`, so none of them reach a commit by accident; running the Master rebuilds the generated ones. Your logs therefore reach us only through the ZIP: open it before you upload and confirm both `.jsonl.enc` files are inside. Check the files selected for every commit, especially `config/.env`, so no API key is published.
 
 **Your repository is public, including a fork of this one, and GitHub does not let a fork be made private.** Everything you push is readable by anyone, so nothing in this lab asks you to put your name or student ID in a file you push: they live only in the git-ignored `config/.env`, encrypted from there into your session logs, which are git-ignored as well and handed in on NTU COOL. The notebooks you commit identify which notebook produced them, not who you are. If you add your own cells, keep your name and student ID out of them: that is the one place where it is still up to you.
+
+
+# uv run --locked jupyter lab
